@@ -23,17 +23,12 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install step
-        run: "pip install -r requirement.yxy"
+      - name: Build step
+        run: "pip install -r requirement.txt"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "erlandi-python99-70"
-          entrypoint: "python *py"
+          project: "erlandi-python99-73"
+          entrypoint: "python *"
           root: ""
