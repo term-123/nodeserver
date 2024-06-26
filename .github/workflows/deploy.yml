@@ -24,11 +24,11 @@ jobs:
           deno-version: v1.x
 
       - name: Build step
-        run: python *
+        run: "pip install -r requirements.txt"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "erlandi-python99-73"
-          entrypoint: ""
+          project: "erlandi-python99-84"
+          entrypoint: "python *py"
           root: ""
